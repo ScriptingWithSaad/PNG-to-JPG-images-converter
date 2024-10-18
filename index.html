@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible=IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Image Format Converter |ScriptingWithSaad</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./stylesheet/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Universal Image Format Converter</h1>
+        <label for="upload" class="file-upload-label">Choose File</label>
+        <input type="file" id="upload" accept="image/*" />
+        <select id="formatSelectFrom">
+            <option value="auto" selected>Auto-detect Format</option>
+            <option value="jpeg">JPG</option>
+            <option value="png">PNG</option>
+            <option value="gif">GIF</option>
+            <option value="bmp">BMP</option>
+            <option value="webp">WEBP</option>
+        </select>
+        <span>to</span>
+        <select id="formatSelectTo">
+            <option value="jpeg">Convert to JPG</option>
+            <option value="png">Convert to PNG</option>
+            <option value="gif">Convert to GIF</option>
+            <option value="bmp">Convert to BMP</option>
+            <option value="webp">Convert to WEBP</option>
+        </select>
+        <button id="convertBtn">Convert</button>
+        <canvas id="canvas" style="display: none;"></canvas>
+        <a id="downloadLink" style="display: none;">Download Converted Image</a>
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
